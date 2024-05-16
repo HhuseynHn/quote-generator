@@ -1,0 +1,99 @@
+/** @format */
+
+@import url("./img/backgrnImg..css");
+@import url("./fonts/font-montserrat.css");
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #ffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1600px) {
+  .quote-container {
+    margin: auto 10px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 15px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 1.6rem 0rem;
+    border-radius: 15px;
+  }
+}
+.fa-quote-left {
+  font-size: 4.8rem;
+}
+#author {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1.5rem;
+}
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+button:hover {
+  filter: brightness(110%);
+}
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+.fa-x-twitter:hover {
+  color: #38a1f3;
+}
+.fa-x-twitter {
+  font-size: 1.5rem;
+}
+
+.quote-text {
+  font-size: 2.5rem;
+}
+.quote-text-large {
+  padding: 0px 25px;
+}
+
+.new {
+  background-color: red;
+}
+
+/* Loader */
+
+.loader {
+  border: 7px solid #f3f3f3; /* Light grey */
+  border-top: 9px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
